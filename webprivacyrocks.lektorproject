@@ -1,5 +1,0 @@
-[project]
-name = Web Privacy Rocks
-
-[servers.ghpages]
-target = ghpages+https://webprivacy-rocks/webprivacy.rocks
