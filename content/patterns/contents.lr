@@ -3,10 +3,5 @@ html: patterns.html
 title: Patterns
 ---
 body:
-
-- [data confinement](/patterns/data-confinement)
-- [data store](/patterns/data-store)
-- [metadata](/patterns/metadata)
-- [tracking protection](/patterns/tracking-protection)
 ---
 _discoverable: yes
