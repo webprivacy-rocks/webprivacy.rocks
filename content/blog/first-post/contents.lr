@@ -1,4 +1,4 @@
-_template: blog
+_template: blog-post.html
 ---
 title: Hello Website
 ---
