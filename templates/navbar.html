@@ -11,7 +11,7 @@
     </label>
     <input type="checkbox" id="nav-toggle"/>
     <div class="collapse navbar-collapse hamburger-menu" id="navbarSupportedContent">
-      <div class="mx-auto pt-2 pl-4">
+      <div class="pt-2 pl-4">
         <ul class="navbar-nav">
         	{% set menubag = 'menu' %}
         	{% for id, item in bag(menubag).items() %}
@@ -30,9 +30,6 @@
         	</li>
   	{% endfor %}
         </ul>
-      </div>
-      <div class="mt-2 btn-group dropdown pr-2">
-          <button type="button" class="btn btn-dark bg-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
       </div>
     </div>
   </nav>
