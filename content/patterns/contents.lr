@@ -10,3 +10,5 @@ body:
 - [tracking protection](/patterns/tracking-protection)
 ---
 _discoverable: yes
+---
+_hidden: no
