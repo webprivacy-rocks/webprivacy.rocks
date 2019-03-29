@@ -1,0 +1,11 @@
+html: resources.html
+---
+title: Javascript
+---
+body:
+
+# JavaScript #
+
+- cookies
+- XSS and code injection
+- record hardware activity, eg typing?
