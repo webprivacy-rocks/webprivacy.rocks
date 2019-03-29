@@ -6,10 +6,47 @@ body:
 
 ## CSS ##
 
+Cascading Style Sheets (CSS) is a language that expresses the presentation of
+structured documents written in a markup language, like HTML. Together with HTML
+and JavaScript, CSS is one of the technologies used on the World Wide Web.
+
+CSS is designed to allow the separation between content and presentation, with
+the idea of reducing complexity.
+
 ## How can CSS be used to interact with the DOM ##
+
+CSS syntax is relatively simple. Each sheet consists of a list of rules. Each rule
+contains one or more selectors and a declaration block.
+
+A selector is used to define which part of the markup a style is applied to. A selector
+matches tags and or attributes of the markup document.
+
+A declaration block consists of a list of properties and value, enclosed in braces.
+
+By understanding how certain elements are styled, we can gather some information about
+the user, like the screen resolution and which bowser (or engine) is used.
+
+By using basic state information about an element it is also possible to detect when a user
+click on a link or hovers with the mouse over an element.
 
 ## When can CSS be used _instead_ of JavaScript ##
 
+CSS can be used to style certain selector in a HTML page without having to resort to
+JavaScript.
+
+Avoiding complex scripts, or even minimizing the use of JavaScript, allows the page
+to load faster, making the website easier to load for mobile devices ad also
+preserving batter life.
+
 ## Security concerns regarding user interactions tracking and CSS ##
+
+There are various examples of state information present in css being exploited to
+track users on websites without using javascript [1].
+
+## References ##
+
+1. [CrookedStyleSheets](https://github.com/jbtronics/CrookedStyleSheets)
+2. [Tracking Users with CSS](https://www.templarbit.com/blog/2018/03/20/tracking-users-with-css/)
+
 ---
 _discoverable: yes

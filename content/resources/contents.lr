@@ -4,10 +4,10 @@ title: Resources
 ---
 body:
 
-- [browser-api](/resources/browser-api)
-- [css](/resources/css)
-- [javascript](/resources/javascript)
-- [media-formats](/resources/media-formats)
-- [tor-browser](/resources/tor-browser)
+- [browser-api](/browser-api)
+- [css](/css)
+- [javascript](/javascript)
+- [media-formats](/media-formats)
+- [tor-browser](/tor-browser)
 ---
 _discoverable: yes
