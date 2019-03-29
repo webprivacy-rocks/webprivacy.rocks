@@ -1,3 +1,5 @@
+_template: layout.html
+---
 html: home.html
 ---
 title: Web Privacy Rocks!

@@ -1,10 +1,14 @@
-html: resources.html
+_template: layout.html
+---
+html: resource.html
 ---
 title: Javascript
 ---
 body:
 
 # JavaScript #
+
+
 
 - cookies
 - XSS and code injection

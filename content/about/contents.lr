@@ -1,3 +1,5 @@
+_template: layout.html
+---
 html: about.html
 ---
 title: About this Website

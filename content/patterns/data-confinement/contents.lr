@@ -1,4 +1,6 @@
-html: patterns.html
+_template: layout.html
+---
+html: pattern.html
 ---
 title: User data confinement
 ---

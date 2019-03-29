@@ -1,5 +1,8 @@
 [project]
 name = Web Privacy Rocks
+url = https://webprivacy.rocks/
+url_style = relative
+locale = en
 
 [servers.ghpages]
 target = ghpages+https://webprivacy-rocks/webprivacy.rocks

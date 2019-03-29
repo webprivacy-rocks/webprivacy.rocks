@@ -1,4 +1,6 @@
-html: resources.html
+_template: layout.html
+---
+html: resource.html
 ---
 title: CSS
 ---

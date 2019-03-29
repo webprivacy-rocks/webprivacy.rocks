@@ -1,3 +1,5 @@
+_template: layout.html
+---
 html: patterns.html
 ---
 title: Patterns

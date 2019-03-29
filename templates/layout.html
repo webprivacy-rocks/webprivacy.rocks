@@ -12,11 +12,13 @@
   </header>
   <div class="page">
     {% include 'header.html' %}
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="container">
-          <main role="main" class="row">
-            {% include this.html %}
+          <main role="main" class="mx-auto col-12 order-last">
+            <div class="container pt-5 justify-content-center">
+              {% include this.html %}
+            </div>
           </main>
         </div>
       </div>

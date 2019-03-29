@@ -1,7 +1,0 @@
-html: resources.html
----
-title: Browser api
----
-body: ## Interact with the browser ##
----
-_discoverable: yes
