@@ -9,3 +9,5 @@ body:
 - cookies
 - XSS and code injection
 - record hardware activity, eg typing?
+---
+_discoverable: yes

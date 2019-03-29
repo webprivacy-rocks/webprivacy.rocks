@@ -11,3 +11,5 @@ body:
 ## When can CSS be used _instead_ of JavaScript ##
 
 ## Security concerns regarding user interactions tracking and CSS ##
+---
+_discoverable: yes
