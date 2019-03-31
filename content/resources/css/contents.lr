@@ -118,6 +118,7 @@ The following snippets re-emplement the menu without JS.
 ```css
 
 label {
+  background: blue;
   cursor: pointer;
 }
 
@@ -138,6 +139,7 @@ label {
 }
 
 ```
+Try it out on [jsfiddle](https://jsfiddle.net/o1hypje7/1/)
 
 Avoiding complex scripts, or even minimizing the use of JavaScript, allows the page
 to load faster, making the website easier to load for mobile devices ad also
