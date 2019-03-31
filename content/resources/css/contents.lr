@@ -17,6 +17,10 @@ the idea of reducing complexity.
 
 ## How can CSS be used to interact with the DOM ##
 
+The Document Object Model (DOM) is a programming interface representing a HTML page.
+Manipulating the DOM means changing the document structure, style, and content.
+The DOM represents the document as nodes and objects.
+
 CSS syntax is relatively simple. Each sheet consists of a list of rules. Each rule
 contains one or more selectors and a declaration block.
 
@@ -26,7 +30,7 @@ matches tags and or attributes of the markup document.
 A declaration block consists of a list of properties and value, enclosed in braces.
 
 By understanding how certain elements are styled, we can gather some information about
-the user, like the screen resolution and which bowser (or engine) is used.
+the user, like the screen resolution and which browser (or engine) is used.
 
 By using basic state information about an element it is also possible to detect when a user
 click on a link or hovers with the mouse over an element.
@@ -35,6 +39,105 @@ click on a link or hovers with the mouse over an element.
 
 CSS can be used to style certain selector in a HTML page without having to resort to
 JavaScript.
+
+Take the following dropdown button:
+
+```html
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-dark bg-dark drop dropdown-toggle btn-block my-3 my-sm-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="">Item A</a>
+        <a class="dropdown-item" href="">Item C</a>
+        <a class="dropdown-item" href="">Item D</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+```css
+.dropdown{
+  display: block;
+}
+
+.dropdown-menu {
+    margin: 0;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
+.dropdown .btn {
+    border-radius: 0;
+}
+
+```
+
+Test it out on [jsfiddle](https://jsfiddle.net/fo0m6urL/2/)
+
+The button is extended from a normal [boothstrap](https://getboothstrap.com) button.
+Only a few lines of CSS allow the button to work even when JS is disabled by using
+the interaction between the display property and the hoover state of the mouse
+over an element.
+
+Another example is a classical hamburger menu expanding its content via JavaScript.
+The following snippets re-emplement the menu without JS.
+
+```html
+
+<label for="nav-toggle">
+  <a class="btn btn-lg btn-primary navbar-toggler text-white p-3" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    Menu <span class="navbar-toggler-icon ml-1"></span>
+  </a>
+</label>
+<input id="nav-toggle" type="checkbox">
+<div class="navbar-collapse hamburger-menu collapse show" id="navbarSupportedContent" style="">
+  <div class="mx-auto">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="">Item A</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Item B</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Item C</a>
+      </li>
+    </ul>
+  </div>
+</div>
+```
+
+```css
+
+label {
+  cursor: pointer;
+}
+
+#nav-toggle {
+  display: none; /* hide the checkbox */
+}
+
+#nav-toggle:checked + .hamburger-menu {
+  display: block;
+}
+
+.navbar-toggler:hover .chevron-up {
+    display: block !important;
+}
+
+.navbar-toggler:hover .chevron-down {
+    display: none;
+}
+
+```
 
 Avoiding complex scripts, or even minimizing the use of JavaScript, allows the page
 to load faster, making the website easier to load for mobile devices ad also

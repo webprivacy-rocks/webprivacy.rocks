@@ -6,12 +6,38 @@ title: Javascript
 ---
 body:
 
-# JavaScript #
+## JavaScript ##
+
+JavaScript (or JS), is a high-level, interpreted programming language characterized
+as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS,
+JavaScript is one of the core technologies of Web. JavaScript specifically is an
+essential part of web applications, enabling dynamic interaction on the client side.
+
+There are many different way to which JavaScript can be abused to track users on web
+pages. The most commons involve performing http calls to remote services sharing
+information about the user activity on a certain page, record their actions or
+collecting data about the user browsing history, or the properties of the used device.
+
+## Risks of using CDNs ##
+
+JavaScript libraries are often fetched from Content Delivery Networks (CDNs), providing
+the advantage that files are fetched by the client, improving site performance
+and conserving bandwidth.
+
+However using CDNs also comes with the risk that if the CDN is compromised an
+attacker can inject arbitrary malicious content into all the files distributed by the CDN.
+
+In this case, it is advised to use Subresource Integrity (SRI), a security feature
+that enables browsers to verify that resources they fetch are delivered without
+unexpected manipulation. [1]
+
+It works by providing a cryptographic hash that a fetched resource must match. [2]
 
 
+## References ##
 
-- cookies
-- XSS and code injection
-- record hardware activity, eg typing?
+[2] https://www.w3.org/TR/SRI/
+[1] https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
+
 ---
 _discoverable: yes

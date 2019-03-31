@@ -1,9 +1,0 @@
-_template: layout.html
----
-html: resource.html
----
-title: Media formats
----
-body:
-
-## What are media formats ##
