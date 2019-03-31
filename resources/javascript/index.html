@@ -77,12 +77,28 @@
           <main role="main" class="mx-auto col-12 order-last">
             <div class="container pt-5 justify-content-center">
               
-  <h1>JavaScript</h1>
-<ul>
-<li>cookies</li>
-<li>XSS and code injection</li>
-<li>record hardware activity, eg typing?</li>
-</ul>
+  <h2>JavaScript</h2>
+<p>JavaScript (or JS), is a high-level, interpreted programming language characterized
+as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS,
+JavaScript is one of the core technologies of Web. JavaScript specifically is an
+essential part of web applications, enabling dynamic interaction on the client side.</p>
+<p>There are many different way to which JavaScript can be abused to track users on web
+pages. The most commons involve performing http calls to remote services sharing
+information about the user activity on a certain page, record their actions or
+collecting data about the user browsing history, or the properties of the used device.</p>
+<h2>Risks of using CDNs</h2>
+<p>JavaScript libraries are often fetched from Content Delivery Networks (CDNs), providing
+the advantage that files are fetched by the client, improving site performance
+and conserving bandwidth.</p>
+<p>However using CDNs also comes with the risk that if the CDN is compromised an
+attacker can inject arbitrary malicious content into all the files distributed by the CDN.</p>
+<p>In this case, it is advised to use Subresource Integrity (SRI), a security feature
+that enables browsers to verify that resources they fetch are delivered without
+unexpected manipulation. [1]</p>
+<p>It works by providing a cryptographic hash that a fetched resource must match. [2]</p>
+<h2>References</h2>
+<p>[2] <a href="https://www.w3.org/TR/SRI/">https://www.w3.org/TR/SRI/</a>
+[1] <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a></p>
 
 
             </div>
