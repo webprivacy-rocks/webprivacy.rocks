@@ -22,7 +22,7 @@ to support Tor and similar privacy proxies safely. Privacy requirements are prim
 concerned with reducing the possibility that a user's activity on one site can be
 linked with their activity on another site without their knowledge or explicit consent [1].
 
-Tor Browser is also designed with a number of philosophical position about web
+Tor Browser is also designed with a number of philosophical positions about web
 technology. These are:
 
 - Preserve the existing way that the user expects to use a browser.

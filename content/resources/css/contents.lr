@@ -84,7 +84,7 @@ Take the following dropdown button:
 
 Test it out on [jsfiddle](https://jsfiddle.net/n1tbpsw8/1/)
 
-The button is extended from a normal [boothstrap](https://getboothstrap.com) button.
+The button is extended from a normal [bootstrap](https://getbootstrap.com) button.
 Only a few lines of CSS allow the button to work even when JS is disabled by using
 the interaction between the display property and the hoover state of the mouse
 over an element.
